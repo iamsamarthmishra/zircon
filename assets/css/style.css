@@ -1247,6 +1247,37 @@ textarea.input-field {
 }
 
 
+/* dropdowncode here */
+/* Hide dropdown menu by default */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: transparent; /* Background color of dropdown */
+  box-shadow: 0 8px 16px rgb(255, 255, 255); /* Box shadow for dropdown */
+  z-index: 1; /* Ensure dropdown appears above other content */
+}
+
+/* Show dropdown when parent li is hovered */
+.navbar-item:hover .dropdown-menu {
+  display: block;
+}
+
+/* Style the dropdown links */
+.dropdown-menu li {
+  padding: 10px;
+}
+
+.dropdown-menu li a {
+  display: block;
+  color: #fffafa; /* Text color of dropdown links */
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #000000; /* Background color on hover */
+}
+
+
 
 
 
