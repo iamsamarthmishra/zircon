@@ -640,7 +640,7 @@ body.nav-active { overflow: hidden; }
 .preload .text {
   background-image: var(--loading-text-gradient);
   background-size: 500%;
-  font-size: calc(2rem + 3vw);
+  font-size: calc(2rem + 3vw); /* Adjusted font size */
   font-weight: var(--weight-bold);
   line-height: 1em;
   text-transform: uppercase;
@@ -658,8 +658,22 @@ body.nav-active { overflow: hidden; }
   100% { background-position: 0%; }
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .preload .text {
+    font-size: calc(1.5rem + 2vw); /* Reduced font size */
+    letter-spacing: 8px; /* Reduced letter spacing */
+    padding-inline-start: 8px; /* Reduced padding */
+  }
+}
 
-
+@media (max-width: 480px) {
+  .preload .text {
+    font-size: calc(1rem + 2vw); /* Further reduced font size */
+    letter-spacing: 4px; /* Further reduced letter spacing */
+    padding-inline-start: 4px; /* Further reduced padding */
+  }
+}
 
 
 /*-----------------------------------*\
